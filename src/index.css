@@ -1,7 +1,6 @@
-/* If not using Tailwind, remove these lines or replace with compiled Tailwind CSS */
-/* @tailwind base; */
-/* @tailwind components; */
-/* @tailwind utilities; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Agora pode vir o seu código customizado */
 @layer base {
@@ -41,11 +40,10 @@
   }
 
   * {
-    border-color: hsl(var(--border));
+    @apply border-border;
   }
 
   body {
-    background-color: hsl(var(--background));
-    color: hsl(var(--foreground));
+    @apply bg-background text-foreground;
   }
 }
