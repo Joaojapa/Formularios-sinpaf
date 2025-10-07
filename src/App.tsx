@@ -9,6 +9,13 @@ import FormAP from "./pages/FormAP";
 import FormAS from "./pages/FormAS";
 import FormAV from "./pages/FormAV";
 import FormAR from "./pages/FormAR";
+import FormCC from "./pages/FormCC";
+import FormBFF from "./pages/FormBFF";
+import FormCD from "./pages/FormCD";
+import FormPCS from "./pages/FormPCS";
+import FormPCV from "./pages/FormPCV";
+import FormBCB from "./pages/FormBCB";
+import FormRPS from "./pages/FormRPS";
 import NotFound from "./pages/NotFound";
 import sinpafLogo from "./imagem sinpaf/sinpaff.png";
 
@@ -20,11 +27,18 @@ function Navbar() {
   const isActive = (path: string) => location.pathname === path;
 
   const navItems = [
-    { path: "/", label: "Início", icon: HomeIcon },
     { path: "/ap", label: "AP", icon: FileText },
     { path: "/as", label: "AS", icon: FileText },
     { path: "/av", label: "AV", icon: FileText },
     { path: "/ar", label: "AR", icon: FileText },
+    { path: "/cc", label: "CC", icon: FileText },
+    { path: "/bff", label: "BFF", icon: FileText },
+    { path: "/cd", label: "CD", icon: FileText },
+    { path: "/pcs", label: "PCS", icon: FileText },
+    { path: "/pcv", label: "PCV", icon: FileText },
+    { path: "/bcb", label: "BCB", icon: FileText },
+    { path: "/rps", label: "RPS", icon: FileText },
+    
   ];
 
   return (
@@ -81,6 +95,13 @@ function Layout() {
           <Route path="/as" element={<FormAS />} />
           <Route path="/av" element={<FormAV />} />
           <Route path="/ar" element={<FormAR />} />
+          <Route path="/cc" element={<FormCC />} />
+          <Route path="/bff" element={<FormBFF />} />
+          <Route path="/cd" element={<FormCD />} />
+          <Route path="/pcs" element={<FormPCS />} />
+          <Route path="/pcv" element={<FormPCV />} />
+          <Route path="/bcb" element={<FormBCB />} />
+          <Route path="/rps" element={<FormRPS />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

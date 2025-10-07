@@ -29,7 +29,51 @@ const Home = () => {
       description: "Formulário para autorização de recebimentos",
       path: "/ar",
     },
+  {
+      id: "bcb",
+      title: "BCB - Boletim de Caixa e Bancos",
+      description: "Formulário para autorização de recebimentos",
+      path: "/bcb",
+    },
+
+      {
+      id: "rps",
+      title: "RPS - Recibo de prestação de Serviços",
+      description: "Formulário para autorização de recebimentos",
+      path: "/rps",
+      },
+      {
+      id: "pcv",
+      title: "PCV - Prestação de Contas de Viagem",
+      description: "Formulário para autorização de recebimentos",
+      path: "/pcv",
+    },
+      {
+      id: "pcs",
+      title: "PCS - Prestação de Contas de Suprimento",
+      description: "Formulário para autorização de recebimentos",
+      path: "/pcs",
+    },
+      {
+      id: "cd",
+      title: "CD - Comprovante de Despesa",
+      description: "Formulário para autorização de recebimentos",
+      path: "/cd",
+    },
+      {
+      id: "cc",
+      title: "CC - Copia de Cheque",
+      description: "Formulário para autorização de recebimentos",
+      path: "/cc",
+     },
+      {
+      id: "bff",
+      title: "BFF - Boletim de Fundos Fixos",
+      description: "Formulário para autorização de recebimentos",
+      path: "/bff",
+    },
   ];
+  
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-muted/30 to-background">
